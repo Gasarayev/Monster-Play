@@ -1,0 +1,235 @@
+
+.blog_banner {
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    background-image: url('../img/bg-banner-1.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.blog_banner .blog_banner_bgOpacity{
+    width: 100%;
+    min-height:75vh ;
+    background-color: rgba(0, 0, 0, 0.467);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_banner_bgOpacity .blog_banner_contain{
+    width: 80%;
+}
+
+
+.blog_banner_contain h1{
+    font-size: 3.875rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: .01em;
+}
+
+.blog_banner_contain p{
+    width: 70%;
+    font-size: 1.375rem;
+    line-height: 1.8;
+    color: #b9b7c0;
+    letter-spacing: .02em;
+}
+
+/* Game News */
+
+.blog_parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 100px 0;
+}
+
+.blog_left {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+}
+
+.blog_blackMesa img {
+    width: 80%;
+    border-radius: 7px;
+    transition: transform 0.5s;
+    transform: skew(-2deg);
+}
+
+.blog_blackMesa:hover .blackMesa_title {
+    color: #dc3545;
+}
+
+.blackMesa_title {
+    font-size: 1.375rem;
+    font-weight: 500;
+    padding-top: 10px;
+    transition: color 0.5s;
+}
+
+.blackMesa_date {
+    margin-top: 14px;
+    font-size: 0.875rem;
+    display: flex;
+    gap: 7px;
+}
+
+.blackMesa_date span{
+    color: #827f92;
+}
+
+.blog_right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* Search */
+
+.blog_right input{
+    width: 300px;
+    padding: .75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #b9b7c0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transform: skew(-4deg);
+    background: #2a2836;
+}
+
+
+.blog_right h3{
+    font-size: 1.375rem;
+}
+
+.popular_news {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.popular_news img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.popular_news .popular_content_title{
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: .5s;
+    margin-bottom: 12px;
+}
+
+.popular_news:hover .popular_content_title{
+    color: #dc3545;
+}
+
+.popular_content_date{
+    font-size: .875rem;
+    color: #827f92;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .blog_banner{
+        min-height: 60vh;
+    }
+
+    .blog_banner .blog_banner_bgOpacity{
+        min-height: 60vh;
+    }
+    
+    .blog_banner_contain p{
+        width: 100%;
+    }
+
+
+    /* Product Part */
+
+    .blog_left {
+        width: 95%;
+        justify-content: center;
+    }
+
+    .blog_blackMesa{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .blog_blackMesa img {
+        width: 95%;
+    }
+
+    /* Search */
+
+    .blog_parent{
+        position: relative;
+        padding-bottom: 0;
+    }
+
+    .blog_right input{
+        width: 90%;
+        position: absolute;
+        top: 25px;
+        left: 42px;
+    }
+}
+
+@media screen and (max-width: 565px){
+
+    .blog_banner .blog_banner_bgOpacity{
+        min-height: 105vh;
+    }
+
+    .blog_banner_bgOpacity .blog_banner_contain{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog_banner_contain p{
+        width: 100%;
+    }
+
+    .blog {
+        width: 100%;
+    }
+
+    .blog_left {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .blog_blackMesa img {
+        width: 100%;
+    }
+
+    .blog_right input{
+        width: 70%;
+        top: 25px;
+        left: 32px;
+    }
+}

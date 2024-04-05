@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    color: #fff;
+    scrollbar-color: #1f1d29 #2a2836 ;
+}
+
+body {
+    background-color: #1f1d29;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #b9b7c0;
+    letter-spacing: .02em;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: .01em;
+}
+
+a:link {
+    text-decoration: none;
+  }

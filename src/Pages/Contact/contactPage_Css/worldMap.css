@@ -1,0 +1,10 @@
+.location{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.location iframe{
+    width: 100%; 
+    min-height: 500px;
+}

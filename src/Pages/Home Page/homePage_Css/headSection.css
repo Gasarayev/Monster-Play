@@ -1,0 +1,68 @@
+.headSection {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../image/bg-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 170px;
+    color: white;
+}
+
+.headSection h1 {
+    font-size: 3.875rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    letter-spacing: .01em;
+}
+
+
+.headSection p {
+    width: 90%;
+    font-size: 1.375rem;
+    line-height: 1.8;
+    letter-spacing: .02em;
+    color: #b9b7c0;
+    margin-bottom: 45px;
+    font-style: italic;
+}
+
+.headSection button {
+    width: 150px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transform: skew(-4deg);
+    background: #d31c3e;
+    background: linear-gradient(to left, #d31c3e 50%, white 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.headSection button:hover {
+    background-position: left;
+    color: #d31c3e;
+}
+
+@media screen and (max-width: 991px) {
+    .headSection{
+       padding: 80px 20px 0 20px; 
+       text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .headSection{
+        padding: 200px 20px 150px 20px; 
+       
+     }
+}

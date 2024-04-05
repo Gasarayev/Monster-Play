@@ -1,0 +1,145 @@
+.contactSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    background-color: #1f1d29;
+}
+
+.contactSection .contactSection_container{
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contactSection_container .contactText{
+    width: 38%;
+}
+
+.contactText p{
+    padding-top: 32px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #b9b7c0;
+    letter-spacing: .02em;
+}
+
+.contactText .contactText_icons{
+    display: flex;
+    gap: 20px;
+}
+
+.contactText .contactText_icons i{
+    color: #b9b7c0;
+    font-size: 26px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contactText .contactText_icons span:nth-child(3){
+    background-color: #b9b7c0;
+    border-radius: 50%;
+    width: 25px;
+    transition: .5s;
+
+}
+
+.contactText .contactText_icons span:nth-child(3) i{
+    color: #1f1d29;
+}
+
+.contactText .contactText_icons i:hover{
+    color: #dc3545;
+}
+
+.contactText .contactText_icons span:hover:nth-child(3){
+    background-color: #dc3545;   
+}
+
+.contactSection_container .contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactSection_container .contactForm div {
+    display: flex;
+    gap: 20px;
+}
+
+.contactSection_container .contactForm input{
+    width: 300px;
+    padding: .75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #b9b7c0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transform: skew(-4deg);
+    background: #2a2836;
+}
+
+.contactSection_container .contactForm textarea{
+    height: 144px;
+    padding: .75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #b9b7c0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #2a2836;
+}
+
+.contactSection_container .contactForm button{
+    width: 100px;
+    height: 40px;
+    transform: skew(-4deg);
+    background-color: #dc3545;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+}
+
+@media screen and (max-width: 1200px){
+    .contactSection_container .contactForm input{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    .contactSection_container .contactText{
+        width: 100%;
+    }
+
+    .contactText .contactText_icons{
+        padding-bottom: 60px;
+    }
+
+    .contactSection_container .contactForm{
+        width: 100%;
+    }
+
+    .contactSection_container .contactForm input{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 760px){
+    .contactSection_container .contactForm div {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,126 @@
+.slider-container {
+    padding: 50px 0;
+}
+
+.slider-container .slideImg_Parent{
+    display: flex !important;
+    justify-content: center;
+}  
+
+.slider-container .slick-slider {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-container .slick-list {
+    width: 85%;
+}
+
+.slider-container .slick-prev {
+    left: 110px !important;
+    z-index: 999999 !important;
+    opacity: .4;
+
+}
+
+.slider-container .slick-prev::before,
+.slider-container .slick-next::before {
+    font-size: 42px !important;
+}
+
+.slider-container .slick-next {
+    right: 130px !important;
+    z-index: 999999 !important;
+    opacity: .4;
+
+}
+
+.slider-container .slide_img {
+    width: 420px;
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: #fff;
+    padding-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.slider-container .slide_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.slider-container .slide_img:hover::before {
+    opacity: 0;
+
+}
+
+.slider-container .slide_title p {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2
+}
+
+.slider-container .slide_rating {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 20%;
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1475px) {
+
+    .slider-container .slide_img {
+        margin: 5px;
+    }
+
+    .slider-container .slick-list {
+        width: 98%;
+    }
+
+    .slider-container .slick-prev {
+        left: 2px !important;
+    }
+    
+    .slider-container .slick-next {
+        right: 25px !important;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .slideImg_Parent .slide_img{
+        width: 350px;
+        height: 200px;
+    }
+
+    .slider-container .slick-prev {
+        display: none !important;
+    }
+
+    .slider-container .slick-next {
+        display: none !important;
+    }
+}
