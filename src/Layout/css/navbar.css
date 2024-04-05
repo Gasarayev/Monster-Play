@@ -9,7 +9,7 @@ nav {
     font-weight: 500;
     position: fixed;
     box-shadow: 0px 15px 10px -15px #111; 
-    z-index: 9999999999999999999999;
+    z-index: 9999999999999;
 }
 
 .menu_logo {
