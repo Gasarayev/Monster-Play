@@ -33,12 +33,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom:100px ;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+
 }
 
 .blogInfo .blogInfo_contain {
     width: 80%;
     display: flex;
+    gap: 15px;
 }
 
 .blogInfo_about {
@@ -56,6 +59,7 @@
 .blogInfo_contain .blogInfo_videoImg {
     display: flex;
     gap: 30px;
+    /* flex-wrap: wrap; */
     padding-bottom: 40px;
 }
 
@@ -109,7 +113,7 @@
     font-family: "PT Sans", sans-serif;
 }
 
-.good_section h5{
+.good_section h5 {
     font-size: 1.375rem;
     font-family: "PT Sans", sans-serif;
     font-weight: 500;
@@ -143,14 +147,15 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 40px 20px;
+    padding: 40px 20px 20px;
     border-radius: 5px;
 }
 
-.blogInfo_raiting_popular h5{
+.blogInfo_raiting_popular h5 {
     font-size: 1.375rem;
     padding-bottom: 12px;
 }
+
 
 .blogInfo_raiting_popular h4 {
     font-family: "PT Sans", sans-serif;
@@ -162,7 +167,83 @@
     margin-bottom: 12px;
 }
 
-.blogInfo_raiting_popular div p{
+.blogInfo_raiting_popular div p {
     line-height: 1.4;
     color: #b9b7c0;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .blogInfo_contain .blogInfo_videoImg iframe,
+    .blogInfo_contain img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    
+    .blogInfo .blogInfo_contain {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .blogInfo_contain .blogInfo_videoImg {
+        justify-content: center;
+    }
+
+    .blogInfo_contain .blogInfo_description {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .blogInfo_raiting {
+        width: 75%;
+    }
+
+    .blogInfo_raiting_popular {
+        align-items: center;
+        flex-direction: column;
+        min-height: 0;
+
+    }
+}
+
+@media screen and (max-width: 645px){
+    .blogInfo_contain .blogInfo_videoImg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogInfo_contain .blogInfo_videoImg iframe,
+    .blogInfo_contain img {
+        width: 420px;
+        height: 250px;
+    }
+
+    .blogInfo_raiting_child{
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 0;
+        margin: 50px 0;
+    } 
+
+    .blogInfo_raiting_child>div{
+        width: 70%;
+    }
+   
+}
+
+@media screen and (max-width: 460px){
+    .blogInfo_contain .blogInfo_videoImg iframe,
+    .blogInfo_contain img {
+        width: 300px;
+        height: 250px;
+    }
+
+    
 }

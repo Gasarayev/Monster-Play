@@ -85,19 +85,21 @@ function BlogInfo({ slides }) {
                     <div className='blogInfo_raiting'>
 
                         <div className='blogInfo_raiting_popular'>
-                            <h5>Popular Read</h5>
 
+                            <h5>Popular Read</h5>
                             <div>
-                                <h4>Black Mesa</h4>
-                                <p>Years. Female, rule lights is gathering made upon image moved.</p>
-                            </div>
-                            <div>
-                                <h4>Nioh 2</h4>
-                                <p>Dominion there together winged lesser gathered stars be given also.</p>
-                            </div>
-                            <div>
-                                <h4>Death Stranding</h4>
-                                <p>Seasons one void them morning years creature moveth make shall.</p>
+                                <div>
+                                    <h4>Black Mesa</h4>
+                                    <p>Years. Female, rule lights is gathering made upon image moved.</p>
+                                </div>
+                                <div>
+                                    <h4>Nioh 2</h4>
+                                    <p>Dominion there together winged lesser gathered stars be given also.</p>
+                                </div>
+                                <div>
+                                    <h4>Death Stranding</h4>
+                                    <p>Seasons one void them morning years creature moveth make shall.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
