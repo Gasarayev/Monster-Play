@@ -1,4 +1,4 @@
-.blogInfo_head{
+.blogInfo_head {
     position: relative;
     width: 100%;
     min-height: 60vh;
@@ -10,41 +10,42 @@
     margin-bottom: 100px;
 }
 
-.blogInfo_bgOpacity{
+.blogInfo_bgOpacity {
     width: 100%;
-    min-height:60vh ;
+    min-height: 60vh;
     background-color: rgba(0, 0, 0, 0.467);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.blogInfo_bgOpacity_contain{
+.blogInfo_bgOpacity_contain {
     width: 80%;
 }
 
-.blogInfo_bgOpacity_contain h1{
+.blogInfo_bgOpacity_contain h1 {
     font-size: 3.875rem;
     font-weight: 500;
 }
 
-.blogInfo{
+.blogInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom:100px ;
 }
 
-.blogInfo .blogInfo_contain{
+.blogInfo .blogInfo_contain {
     width: 80%;
     display: flex;
 }
 
-.blogInfo_about{
+.blogInfo_about {
     width: 75%;
 }
 
-.blogInfo_contain .blogInfo_contain_title{
+.blogInfo_contain .blogInfo_contain_title {
     margin-bottom: 30px;
     font-size: .75rem;
     font-weight: 600;
@@ -52,91 +53,116 @@
     letter-spacing: .05em;
 }
 
-.blogInfo_contain .blogInfo_videoImg{
+.blogInfo_contain .blogInfo_videoImg {
     display: flex;
     gap: 30px;
     padding-bottom: 40px;
 }
 
-.blogInfo_contain .blogInfo_videoImg iframe, img{
-    width:400px;
+.blogInfo_contain .blogInfo_videoImg iframe,
+.blogInfo_contain img {
+    width: 400px;
     height: 250px;
     transform: skew(-2deg) scale(1.028);
     border-radius: 10px;
 }
 
-.blogInfo_contain .blogInfo_description{
+.blogInfo_contain .blogInfo_description {
     width: 75%;
 }
 
-.blogInfo_contain .blogInfo_description p{
+.blogInfo_contain .blogInfo_description p {
     margin-bottom: 1.5rem;
 }
 
+.blogInfo_raiting_child {
+    width: 100%;
+    background-color: #282535;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 90px;
 
-.blogInfo_raiting{
-    width: 25%;
+}
+
+.blogInfo_raiting_child>div {
+    width: 30%;
+}
+
+.blogInfo_raiting_numb {
     display: flex;
     justify-content: center;
+}
+
+.blogInfo_raiting_numb span {
+    width: 80px;
+    height: 80px;
+    border: 1px dashed #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.875rem;
+    font-weight: 400;
+    font-family: "PT Sans", sans-serif;
+}
+
+.good_section h5{
+    font-size: 1.375rem;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: .01em;
+    padding-bottom: 25px;
+}
+
+.good_section p {
+    color: #b9b7c0;
+    line-height: 1.8;
+    letter-spacing: .02em;
+    display: flex;
+    gap: 10px;
+}
+
+.blogInfo_raiting {
+    width: 25%;
+    display: flex;
     flex-direction: column;
     gap: 10px;
     border-radius: 3px;
-    cursor:default;
-    
+    cursor: default;
 }
 
-.blogInfo_raiting_child{
-    background-color: #282535;
-    min-height: 400px;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px;
-}
 
-.blogInfo_raiting_numb{
-    display: flex;
-    flex-direction:column ;
-    align-items: center;
-    width: 100%;
-}
-
-.blogInfo_raiting_numb span{
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    border-radius: 50%;
-    border: 1px solid white;
-}
-
-.blogInfo_raiting h5{
-    font-size: 1.375rem
-}
-
-.good_section{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.good_section p span{
-    margin-right: 5px;
-}
-
-.blogInfo_raiting_popular{
+.blogInfo_raiting_popular {
     background-color: #282535;
     min-height: 400px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
+    gap: 20px;
+    padding: 40px 20px;
+    border-radius: 5px;
 }
 
-.blogInfo_raiting_popular h4{
-    color: #dc3545;
+.blogInfo_raiting_popular h5{
+    font-size: 1.375rem;
+    padding-bottom: 12px;
+}
+
+.blogInfo_raiting_popular h4 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: .01em;
+    margin-bottom: 12px;
+}
+
+.blogInfo_raiting_popular div p{
+    line-height: 1.4;
+    color: #b9b7c0;
 }

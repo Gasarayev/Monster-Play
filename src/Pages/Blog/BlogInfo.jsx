@@ -60,11 +60,11 @@ function BlogInfo({ slides }) {
 
                                 <p>
                                     <span><i class="fa-solid fa-plus"></i></span>
-                                    {blog.good}
+                                    {blog.good2}
                                 </p>
                                 <p>
                                     <span><i class="fa-solid fa-plus"></i></span>
-                                    {blog.good}
+                                    {blog.good3}
                                 </p>
                             </div>
 
