@@ -4,7 +4,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { FiUser } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link, NavLink, useLocation } from 'react-router-dom';
-    
+
 
 
 
@@ -35,7 +35,11 @@ function Navbar() {
                         <NavLink to={"/blog"}>
                             <li>Blog</li>
                         </NavLink>
-                        <li>Shop</li>
+                        <NavLink to={"/shop"}>
+                            <li>Shop</li>
+                        </NavLink>
+
+
                         <li>About</li>
                         <NavLink to={"/contact-us"}><li>Contact</li></NavLink>
 

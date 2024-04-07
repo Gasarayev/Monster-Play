@@ -1,0 +1,138 @@
+.shopList_input{
+    background-color: #211f2c !important;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.shopList_input input{
+    width: 300px;
+    padding: .75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #b9b7c0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transform: skew(-4deg);
+    background: #2a2836;
+}
+
+.shopProductList{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 20px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #211f2c !important;
+
+}
+
+.shopProductList h2 {
+    padding-bottom: 60px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+.shopProductList .carusel_img {
+    width: 420px;
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    padding-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px;
+    transform: skew(-2deg);
+}
+
+.shopProductList .caruselImg_Parent{
+    transition: .6s;
+}
+
+.shopProductList .caruselImg_Parent .carusel_title p{
+    transition: .5s;
+}
+
+
+.shopProductList .caruselImg_Parent .carusel_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
+}
+
+.shopProductList .caruselImg_Parent:hover .carusel_img::before {
+    opacity: 0;
+
+}
+
+.shopProductList .caruselImg_Parent:hover .carusel_title p{
+    color: #d31c3e;
+    cursor: pointer;
+}
+
+/* Product Slide Content */
+
+.shopProductList .carusel_title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.shopProductList .carusel_starsIcon i{
+    margin-top: 10px;
+}
+
+.shopProductList .carusel_title p {
+    font-weight: 600;
+    margin: 20px 0 10px 30px;
+}
+
+.shopProductList .carusel_Price {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    margin: 0 0 10px 30px;
+    font-weight: 500;
+}
+
+.shopProductList .carusel_newPrice{
+    font-size: 18px;
+    color: #fff;
+}
+
+.shopProductList .carusel_oldPrice{
+    color: #b9b7c0;
+    text-decoration: 2px line-through red;
+}
+
+
+.shopProductList .carusel_productDsc{
+    color: #fff;
+    background-color: #d31c3e;
+    width: 50px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
