@@ -136,3 +136,44 @@
     align-items: center;
     border-radius: 50px;
 }
+
+@media screen and (max-width: 1325px){
+    .shopProductList .carusel_img {
+        width: 380px;
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width: 819px){
+    .shopProductList .carusel_img {
+        width: 320px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .shopProductList .carusel_img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .shopProductList .carusel_title{
+
+        font-size: 18px;
+    }
+
+    .shopProductList .carusel_title p {
+
+        margin: 20px 0 10px 0;
+    }
+
+    .shopProductList .carusel_newPrice{
+        font-size: 14px;
+        
+    }
+
+    .shopProductList .carusel_starsIcon i{
+        font-size: 12px;
+    }
+}
