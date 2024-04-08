@@ -4,9 +4,15 @@
         "title": "Gamepad MPL",
         "newPrice": "$120.00",
         "img": "https://html.nkdev.info/monsterplay/assets/images/dark/product-1280x820.jpg",
-        "stars": 5
-
-        
+        "stars": 5,
+        "desc": "Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfish! Cogitare. Statura pusillus, nec sapientium panem, nec artificum. Sed predators facile prædam blowfish secretum telum non se habet. Non ille? Quid faciam blowfish, Isai. Blowfish quid faciat? In blowfish inflat, purus?",
+        "desc2": "Blowfish librantur in se quatuor, quinquies maior quam normalis, et quare? Quare id faciam? Ut terrorem facit, qui quid. Terrent! Ut alter, scarier pisces agminis off. Et quod tu es? Vos blowfish. Tu iustus in omnibus visio. Vides ... suus ' suus 'non aliud aerem. Nunc ... qui cum partibus blowfish Isai? Tu damnare ius. Vos blowfish. Dicere iterum. Dicere illam quasi velis eam. Es BLOWFISH!",
+        "desc3": "Ut sibi fuerat socius sagittis. Ego intervenerit. Vere quia a te nuper iratus occidit illos undecim annorum puer. Deinde, si hoc forte qui fuit imperavit.",
+        "desc4": "Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Ego vivere, ut debui, et nunc fiant. Istuc quod opus non est. Lorem ipsum occurrebat pragmaticam semper ut, si quis ita velim tibi bene recognoscere. Quorum duo te mihi videtur.",
+        "colour": "Back",
+        "headphoneFit": "Over-Ear",
+        "ItemDimension": "7.08 x 394 x 10.25 in",
+        "SpecialFeature": "noise-cancellation"
     },
     {
         "id": 2,
@@ -15,32 +21,64 @@
         "img": "https://html.nkdev.info/monsterplay/assets/images/dark/product-2-1280x820.jpg",
         "discount": "-30%",
         "oldPrice": "$114.99",
-        "stars": 4
+        "stars": 4,
+        "desc": "Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfish! Cogitare. Statura pusillus, nec sapientium panem, nec artificum. Sed predators facile prædam blowfish secretum telum non se habet. Non ille? Quid faciam blowfish, Isai. Blowfish quid faciat? In blowfish inflat, purus?",
+        "desc2": "Blowfish librantur in se quatuor, quinquies maior quam normalis, et quare? Quare id faciam? Ut terrorem facit, qui quid. Terrent! Ut alter, scarier pisces agminis off. Et quod tu es? Vos blowfish. Tu iustus in omnibus visio. Vides ... suus ' suus 'non aliud aerem. Nunc ... qui cum partibus blowfish Isai? Tu damnare ius. Vos blowfish. Dicere iterum. Dicere illam quasi velis eam. Es BLOWFISH!",
+        "desc3": "Ut sibi fuerat socius sagittis. Ego intervenerit. Vere quia a te nuper iratus occidit illos undecim annorum puer. Deinde, si hoc forte qui fuit imperavit.",
+        "desc4": "Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Ego vivere, ut debui, et nunc fiant. Istuc quod opus non est. Lorem ipsum occurrebat pragmaticam semper ut, si quis ita velim tibi bene recognoscere. Quorum duo te mihi videtur.",
+        "colour": "Back",
+        "headphoneFit": "Over-Ear",
+        "ItemDimension": "7.08 x 394 x 10.25 in",
+        "SpecialFeature": "noise-cancellation"
     },
     {
         "id": 3,
         "title": "Headphones MPS",
         "newPrice": "$74.99",
         "img": "https://html.nkdev.info/monsterplay/assets/images/dark/product-3-1280x820.jpg",
-        "stars": 5
+        "stars": 5,
+        "desc": "Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfish! Cogitare. Statura pusillus, nec sapientium panem, nec artificum. Sed predators facile prædam blowfish secretum telum non se habet. Non ille? Quid faciam blowfish, Isai. Blowfish quid faciat? In blowfish inflat, purus?",
+        "desc2": "Blowfish librantur in se quatuor, quinquies maior quam normalis, et quare? Quare id faciam? Ut terrorem facit, qui quid. Terrent! Ut alter, scarier pisces agminis off. Et quod tu es? Vos blowfish. Tu iustus in omnibus visio. Vides ... suus ' suus 'non aliud aerem. Nunc ... qui cum partibus blowfish Isai? Tu damnare ius. Vos blowfish. Dicere iterum. Dicere illam quasi velis eam. Es BLOWFISH!",
+        "desc3": "Ut sibi fuerat socius sagittis. Ego intervenerit. Vere quia a te nuper iratus occidit illos undecim annorum puer. Deinde, si hoc forte qui fuit imperavit.",
+        "desc4": "Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Ego vivere, ut debui, et nunc fiant. Istuc quod opus non est. Lorem ipsum occurrebat pragmaticam semper ut, si quis ita velim tibi bene recognoscere. Quorum duo te mihi videtur.",
+        "colour": "Back",
+        "headphoneFit": "Over-Ear",
+        "ItemDimension": "7.08 x 394 x 10.25 in",
+        "SpecialFeature": "noise-cancellation"
     },
     {
         "id": 4,
         "title": "Soundbar MPL",
         "newPrice": "$109.99",
         "img": "https://html.nkdev.info/monsterplay/assets/images/dark/product-4-1280x820.jpg",
-        "stars": 4
-
+        "stars": 4,
+        "desc": "Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfish! Cogitare. Statura pusillus, nec sapientium panem, nec artificum. Sed predators facile prædam blowfish secretum telum non se habet. Non ille? Quid faciam blowfish, Isai. Blowfish quid faciat? In blowfish inflat, purus?",
+        "desc2": "Blowfish librantur in se quatuor, quinquies maior quam normalis, et quare? Quare id faciam? Ut terrorem facit, qui quid. Terrent! Ut alter, scarier pisces agminis off. Et quod tu es? Vos blowfish. Tu iustus in omnibus visio. Vides ... suus ' suus 'non aliud aerem. Nunc ... qui cum partibus blowfish Isai? Tu damnare ius. Vos blowfish. Dicere iterum. Dicere illam quasi velis eam. Es BLOWFISH!",
+        "desc3": "Ut sibi fuerat socius sagittis. Ego intervenerit. Vere quia a te nuper iratus occidit illos undecim annorum puer. Deinde, si hoc forte qui fuit imperavit.",
+        "desc4": "Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Ego vivere, ut debui, et nunc fiant. Istuc quod opus non est. Lorem ipsum occurrebat pragmaticam semper ut, si quis ita velim tibi bene recognoscere. Quorum duo te mihi videtur.",
+        "colour": "Back",
+        "headphoneFit": "Over-Ear",
+        "itemDimension": "7.08 x 394 x 10.25 in",
+        "specialFeature": "noise-cancellation",
+        "description": "Yielding from Face, form over, fowl his so own Likeness god stars, had form two thing dry spirit they're there. Him. Moving heaven had beast the waters. Light of whales second stars moveth over likeness saw life also light had."
     },
     {
         "id": 5,
         "title": "Microphone MPL",
         "newPrice": "$139.99",
-        "img":"https://html.nkdev.info/monsterplay/assets/images/dark/product-5-1280x820.jpg",
+        "img": "https://html.nkdev.info/monsterplay/assets/images/dark/product-5-1280x820.jpg",
         "discount": "-10%",
         "oldPrice": "$149.99",
-        "stars": 5
-
+        "stars": 5,
+        "desc": "Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfish! Cogitare. Statura pusillus, nec sapientium panem, nec artificum. Sed predators facile prædam blowfish secretum telum non se habet. Non ille? Quid faciam blowfish, Isai. Blowfish quid faciat? In blowfish inflat, purus?",
+        "desc2": "Blowfish librantur in se quatuor, quinquies maior quam normalis, et quare? Quare id faciam? Ut terrorem facit, qui quid. Terrent! Ut alter, scarier pisces agminis off. Et quod tu es? Vos blowfish. Tu iustus in omnibus visio. Vides ... suus ' suus 'non aliud aerem. Nunc ... qui cum partibus blowfish Isai? Tu damnare ius. Vos blowfish. Dicere iterum. Dicere illam quasi velis eam. Es BLOWFISH!",
+        "desc3": "Ut sibi fuerat socius sagittis. Ego intervenerit. Vere quia a te nuper iratus occidit illos undecim annorum puer. Deinde, si hoc forte qui fuit imperavit.",
+        "desc4": "Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Ego vivere, ut debui, et nunc fiant. Istuc quod opus non est. Lorem ipsum occurrebat pragmaticam semper ut, si quis ita velim tibi bene recognoscere. Quorum duo te mihi videtur.",
+        "colour": "Back",
+        "headphoneFit": "Over-Ear",
+        "ItemDimension": "7.08 x 394 x 10.25 in",
+        "SpecialFeature": "noise-cancellation",
+        "description": "Yielding from Face, form over, fowl his so own Likeness god stars, had form two thing dry spirit they're there. Him. Moving heaven had beast the waters. Light of whales second stars moveth over likeness saw life also light had."
     },
     {
         "id": 6,
@@ -49,14 +87,32 @@
         "img": "https://html.nkdev.info/monsterplay/assets/images/dark/product-7-1280x820.jpg",
         "discount": "-30%",
         "oldPrice": "$149.99",
-        "stars": 4
+        "stars": 4,
+        "desc": "Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfish! Cogitare. Statura pusillus, nec sapientium panem, nec artificum. Sed predators facile prædam blowfish secretum telum non se habet. Non ille? Quid faciam blowfish, Isai. Blowfish quid faciat? In blowfish inflat, purus?",
+        "desc2": "Blowfish librantur in se quatuor, quinquies maior quam normalis, et quare? Quare id faciam? Ut terrorem facit, qui quid. Terrent! Ut alter, scarier pisces agminis off. Et quod tu es? Vos blowfish. Tu iustus in omnibus visio. Vides ... suus ' suus 'non aliud aerem. Nunc ... qui cum partibus blowfish Isai? Tu damnare ius. Vos blowfish. Dicere iterum. Dicere illam quasi velis eam. Es BLOWFISH!",
+        "desc3": "Ut sibi fuerat socius sagittis. Ego intervenerit. Vere quia a te nuper iratus occidit illos undecim annorum puer. Deinde, si hoc forte qui fuit imperavit.",
+        "desc4": "Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Ego vivere, ut debui, et nunc fiant. Istuc quod opus non est. Lorem ipsum occurrebat pragmaticam semper ut, si quis ita velim tibi bene recognoscere. Quorum duo te mihi videtur.",
+        "colour": "Back",
+        "headphoneFit": "Over-Ear",
+        "ItemDimension": "7.08 x 394 x 10.25 in",
+        "SpecialFeature": "noise-cancellation",
+        "description": "Yielding from Face, form over, fowl his so own Likeness god stars, had form two thing dry spirit they're there. Him. Moving heaven had beast the waters. Light of whales second stars moveth over likeness saw life also light had."
     },
     {
         "id": 7,
         "title": "Camera MPL",
         "newPrice": "$198.99",
         "img": "https://html.nkdev.info/monsterplay/assets/images/dark/product-6-1280x820.jpg",
-        "stars": 5
+        "stars": 5,
+        "desc": "Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfish! Cogitare. Statura pusillus, nec sapientium panem, nec artificum. Sed predators facile prædam blowfish secretum telum non se habet. Non ille? Quid faciam blowfish, Isai. Blowfish quid faciat? In blowfish inflat, purus?",
+        "desc2": "Blowfish librantur in se quatuor, quinquies maior quam normalis, et quare? Quare id faciam? Ut terrorem facit, qui quid. Terrent! Ut alter, scarier pisces agminis off. Et quod tu es? Vos blowfish. Tu iustus in omnibus visio. Vides ... suus ' suus 'non aliud aerem. Nunc ... qui cum partibus blowfish Isai? Tu damnare ius. Vos blowfish. Dicere iterum. Dicere illam quasi velis eam. Es BLOWFISH!",
+        "desc3": "Ut sibi fuerat socius sagittis. Ego intervenerit. Vere quia a te nuper iratus occidit illos undecim annorum puer. Deinde, si hoc forte qui fuit imperavit.",
+        "desc4": "Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Ego vivere, ut debui, et nunc fiant. Istuc quod opus non est. Lorem ipsum occurrebat pragmaticam semper ut, si quis ita velim tibi bene recognoscere. Quorum duo te mihi videtur.",
+        "colour": "Back",
+        "headphoneFit": "Over-Ear",
+        "ItemDimension": "7.08 x 394 x 10.25 in",
+        "SpecialFeature": "noise-cancellation",
+        "description": "Yielding from Face, form over, fowl his so own Likeness god stars, had form two thing dry spirit they're there. Him. Moving heaven had beast the waters. Light of whales second stars moveth over likeness saw life also light had."
     },
     {
         "id": 8,
@@ -65,7 +121,15 @@
         "img": "https://html.nkdev.info/monsterplay/assets/images/dark/product-8-1280x820.jpg",
         "discount": "-10%",
         "oldPrice": "$129.99",
-        "stars": 5
-        
+        "stars": 5,
+        "desc": "Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfish! Cogitare. Statura pusillus, nec sapientium panem, nec artificum. Sed predators facile prædam blowfish secretum telum non se habet. Non ille? Quid faciam blowfish, Isai. Blowfish quid faciat? In blowfish inflat, purus?",
+        "desc2": "Blowfish librantur in se quatuor, quinquies maior quam normalis, et quare? Quare id faciam? Ut terrorem facit, qui quid. Terrent! Ut alter, scarier pisces agminis off. Et quod tu es? Vos blowfish. Tu iustus in omnibus visio. Vides ... suus ' suus 'non aliud aerem. Nunc ... qui cum partibus blowfish Isai? Tu damnare ius. Vos blowfish. Dicere iterum. Dicere illam quasi velis eam. Es BLOWFISH!",
+        "desc3": "Ut sibi fuerat socius sagittis. Ego intervenerit. Vere quia a te nuper iratus occidit illos undecim annorum puer. Deinde, si hoc forte qui fuit imperavit.",
+        "desc4": "Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Ego vivere, ut debui, et nunc fiant. Istuc quod opus non est. Lorem ipsum occurrebat pragmaticam semper ut, si quis ita velim tibi bene recognoscere. Quorum duo te mihi videtur.",
+        "colour": "Back",
+        "headphoneFit": "Over-Ear",
+        "ItemDimension": "7.08 x 394 x 10.25 in",
+        "SpecialFeature": "noise-cancellation",
+        "description": "Yielding from Face, form over, fowl his so own Likeness god stars, had form two thing dry spirit they're there. Him. Moving heaven had beast the waters. Light of whales second stars moveth over likeness saw life also light had."
     }
 ]

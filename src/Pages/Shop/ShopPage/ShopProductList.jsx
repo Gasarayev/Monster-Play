@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import "./shop_css/shopproductlist.css"
+import "../shop_css/shopproductlist.css"
+import { Link } from 'react-router-dom';
 
 function ShopProductList({ productSlideJson }) {
     const [searchTerm, setSearchTerm] = useState('');
@@ -25,21 +26,25 @@ function ShopProductList({ productSlideJson }) {
             </div>
 
             <div className='shopProductList'>
-                {filteredProducts.map((carusel) => (
-                    <div className="caruselImg_Parent" key={carusel.id}>
+                {filteredProducts.map((product) => (
+                    <div className="caruselImg_Parent" key={product.id}>
 
-                        <div
-                            className="carusel_img"
-                            style={{ backgroundImage: `url(${carusel.img})` }}
-                        >
-                            {carusel.discount && (
-                                <p className="carusel_productDsc">{carusel.discount}</p>
-                            )}
-                        </div>
+                        <Link to={`/shop/product-details/${product.id}`}>
+
+                            <div
+                                className="carusel_img"
+                                style={{ backgroundImage: `url(${product.img})` }}
+                            >
+                                {product.discount && (
+                                    <p className="carusel_productDsc">{product.discount}</p>
+                                )}
+                            </div>
+                        </Link>
                         <div className="carusel_title">
-                            <p>{carusel.title}</p>
-
-                            {carusel.stars == 4 && (
+                            <Link to={`/shop/product-details/${product.id}`}>
+                                <p>{product.title}</p>
+                            </Link>
+                            {product.stars == 4 && (
                                 <div className="carusel_starsIcon">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -48,7 +53,7 @@ function ShopProductList({ productSlideJson }) {
                                 </div>
 
                             )}
-                            {carusel.stars == 5 && (
+                            {product.stars == 5 && (
                                 <div className="carusel_starsIcon">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -64,10 +69,10 @@ function ShopProductList({ productSlideJson }) {
                         {(
                             <div className="carusel_Price">
                                 <div className="carusel_newPrice">
-                                    {carusel.newPrice}
+                                    {product.newPrice}
                                 </div>
                                 <div className="carusel_oldPrice">
-                                    {carusel.oldPrice}
+                                    {product.oldPrice}
                                 </div>
                             </div>
 

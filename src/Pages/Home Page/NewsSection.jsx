@@ -1,6 +1,6 @@
 import React from 'react'
 import "./homePage_Css/newsSection.css"
-
+import { Link } from 'react-router-dom'
 
 function NewsSection({ slides }) {
     return (
@@ -12,19 +12,23 @@ function NewsSection({ slides }) {
                     {slides.map((slide, index) => (
                         <div key={index}>
 
-                            {slide.date && (
+                            {slide.homepage && (
                                 <div className='newsSection_content'>
-                                    <div
-                                        className="newsSection_img"
-                                        style={{ backgroundImage: `url(${slide.img})` }}
-                                    >
-                                        <div className="newsSection_rating">
-                                            {slide.rating}
+                                    <Link to={`/blog/${slide.id}`}>
+                                        <div
+                                            className="newsSection_img"
+                                            style={{ backgroundImage: `url(${slide.img})` }}
+                                        >
+                                            <div className="newsSection_rating">
+                                                {slide.rating}
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
 
                                     <div className='newsSection_text'>
-                                        <h3>{slide.title}</h3>
+                                        <Link to={`/blog/${slide.id}`}>
+                                            <h3>{slide.title}</h3>
+                                        </Link>
                                         <p className='newsSection_date'>
                                             <p>
                                                 <span><i class="fa-regular fa-calendar"></i></span>
@@ -41,9 +45,11 @@ function NewsSection({ slides }) {
                                         </p>
 
                                         <p className='newsSection_readMore'>
-                                            <span>
-                                                read more
-                                            </span>
+                                            <Link to={`/blog/${slide.id}`}>
+                                                <span>
+                                                    read more
+                                                </span>
+                                            </Link>
                                         </p>
                                     </div>
 

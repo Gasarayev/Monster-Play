@@ -14,7 +14,8 @@
         "good": "Impressive story", 
         "good2":"Absolute cool gameplay",
         "good3": "Lasting appeal",
-        "bad": "Bad rating delivered for demonstration purposes only. Really cool game."
+        "bad": "Bad rating delivered for demonstration purposes only. Really cool game.",
+        "homepage": true
     },
     {
         "id": 2,
@@ -32,7 +33,8 @@
         "good": "Impressive story", 
         "good2":"Absolute cool gameplay",
         "good3": "Lasting appeal",
-        "bad": "Bad rating delivered for demonstration purposes only. Really cool game."
+        "bad": "Bad rating delivered for demonstration purposes only. Really cool game.",
+        "homepage": true
     },
     {
         "id": 3,
@@ -50,7 +52,8 @@
         "good": "Impressive story", 
         "good2":"Absolute cool gameplay",
         "good3": "Lasting appeal",
-        "bad": "Bad rating delivered for demonstration purposes only. Really cool game."
+        "bad": "Bad rating delivered for demonstration purposes only. Really cool game.",
+        "homepage": true
     },
     {
         "id": 4,

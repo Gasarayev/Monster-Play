@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "./css/pauseonhover.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 
 
@@ -20,7 +21,7 @@ function PauseOnHover({ slides }) {
                 setSlidesToShow(1);
             }
         };
-        
+
         handleResize();
 
         window.addEventListener("resize", handleResize);
@@ -46,18 +47,20 @@ function PauseOnHover({ slides }) {
 
                     {slides.map((slide) => (
                         <div className="slideImg_Parent" key={slide.img}>
-                            <div
-                                className="slide_img"
-                                style={{ backgroundImage: `url(${slide.img})` }}
-                            >
-                                <div className="slide_title">
-                                    <p>{slide.title}</p>
-                                </div>
-                                <div className="slide_rating">
-                                    {slide.rating}
-                                </div>
+                            <Link to={`/blog/${slide.id}`}>
+                                <div
+                                    className="slide_img"
+                                    style={{ backgroundImage: `url(${slide.img})` }}
+                                >
+                                    <div className="slide_title">
+                                        <p>{slide.title}</p>
+                                    </div>
+                                    <div className="slide_rating">
+                                        {slide.rating}
+                                    </div>
 
-                            </div>
+                                </div>
+                            </Link>
                         </div>
 
                     ))}

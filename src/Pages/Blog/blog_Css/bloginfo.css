@@ -41,7 +41,7 @@
 .blogInfo .blogInfo_contain {
     width: 80%;
     display: flex;
-    gap: 15px;
+    gap: 50px;
 }
 
 .blogInfo_about {

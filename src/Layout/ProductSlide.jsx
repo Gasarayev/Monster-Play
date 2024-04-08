@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "./css/productcarusel.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 
 function ProductSlide({ productSlideJson }) {
@@ -48,38 +49,43 @@ function ProductSlide({ productSlideJson }) {
 
                     {productSlideJson.map((carusel) => (
                         <div className="caruselImg_Parent" key={carusel.img}>
-                            
-                            <div
-                                className="carusel_img"
-                                style={{ backgroundImage: `url(${carusel.img})` }}
-                            >
-                                {carusel.discount && (
-                                    <p className="carusel_productDsc">{carusel.discount}</p>
-                                )}
-                            </div>
+                            <Link to={`/shop/product-details/${carusel.id}`}>
+
+                                <div
+                                    className="carusel_img"
+                                    style={{ backgroundImage: `url(${carusel.img})` }}
+                                >
+                                    {carusel.discount && (
+                                        <p className="carusel_productDsc">{carusel.discount}</p>
+                                    )}
+                                </div>
+                            </Link>
+
                             <div className="carusel_title">
-                                <p>{carusel.title}</p>
+                                <Link to={`/shop/product-details/${carusel.id}`}>
+                                    <p>{carusel.title}</p>
+                                </Link>
 
-                                {carusel.stars==4 &&(
+                                {carusel.stars == 4 && (
                                     <div className="carusel_starsIcon">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
 
                                 )}
-                                 {carusel.stars==5 &&(
+                                {carusel.stars == 5 && (
                                     <div className="carusel_starsIcon">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
 
                                 )}
-                                
+
                             </div>
 
                             {(

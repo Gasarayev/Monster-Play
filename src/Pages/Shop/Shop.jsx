@@ -1,8 +1,9 @@
 import React from 'react'
-import ShopSlide from './ShopSlide'
+import ShopSlide from './ShopPage/ShopSlide'
 import Navbar from '../../Layout/Navbar'
-import ShopProductList from './ShopProductList'
+import ShopProductList from './ShopPage/ShopProductList'
 import productSlideJson from '../../json/caruselProduct.json'
+import Footer from '../Home Page/Footer'
 
 function Shop() {
     return (
@@ -11,6 +12,7 @@ function Shop() {
             <Navbar />
             <ShopSlide />
             <ShopProductList productSlideJson={productSlideJson} />
+            <Footer/>
 
         </>
     )

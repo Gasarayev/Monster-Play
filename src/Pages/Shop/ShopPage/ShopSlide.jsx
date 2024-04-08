@@ -2,8 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./shop_css/shopslide.css"
-
+import "../shop_css/shopslide.css"
+import { Link } from 'react-router-dom';
 
 function ShopSlide() {
     var settings = {
@@ -12,6 +12,8 @@ function ShopSlide() {
         speed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 8000
     };
 
     return (
@@ -27,7 +29,9 @@ function ShopSlide() {
                             beast him fish firmament fish Face waters fly unto spirit i
                             doesn't one waters divide."
                         </p>
-                        <button>Purchase</button>
+                        <Link to={`/shop/product-details/1`}>
+                            <button>Purchase</button>
+                        </Link>
                     </div>
                     <div className="bgImgSecond bgImg" >
                         <h1>Headphones MPL</h1>
@@ -35,7 +39,9 @@ function ShopSlide() {
                             Blessed cattle multiply he, brought upon, forth form give don't great isn't.
                             Fifth seas divide beginning his."
                         </p>
-                        <button>Purchase</button>
+                        <Link to={`/shop/product-details/2`}>
+                            <button>Purchase</button>
+                        </Link>
                     </div>
                     <div className="bgImgThird bgImg" >
                         <h1>Headphones MPS</h1>
@@ -43,7 +49,9 @@ function ShopSlide() {
                             creeping from shall earth given after whales seas herb isn't bring won't dry.
                             You're from. There which."
                         </p>
-                        <button>Purchase</button>
+                        <Link to={`/shop/product-details/3`}>
+                            <button>Purchase</button>
+                        </Link>
                     </div>
                 </Slider>
             </div>

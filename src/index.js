@@ -7,7 +7,9 @@ import Contact from './Pages/Contact/Contact.jsx';
 import Blog from './Pages/Blog/Blog.jsx';
 import BlogInfo from './Pages/Blog/BlogInfo.jsx';
 import slides from "./json/caruselPics.json";
+import product from './json/caruselProduct.json'
 import Shop from './Pages/Shop/Shop.jsx';
+import ProductDetails from './Pages/Shop/ProductDetails/ProductDetails.jsx';
 
 const root = document.getElementById('root');
 
@@ -21,6 +23,7 @@ ReactDOM.render(
         <Route path="/blog" element={<Blog slides={slides} />} />
         <Route path="/blog/:id" element={<BlogInfo slides={slides} />} />
         <Route path="/shop" element={<Shop/>} />
+        <Route path="/shop/product-details/:id" element={<ProductDetails  product = {product}/>} />
       </Routes>
     </Router>
   </React.StrictMode>,

@@ -3,7 +3,7 @@ import './css/navbar.css'
 import { FiShoppingCart } from "react-icons/fi";
 import { FiUser } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 
 
