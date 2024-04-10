@@ -2,7 +2,9 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Navbar from '../../../Layout/Navbar';
 import "../shop_css/basket.css"
-import { addToCart, decreaseCart } from '../../../features/cartSlice';
+import { addToCart, decreaseCart, removeFromCart } from '../../../features/cartSlice';
+
+
 function Basket() {
 
     const dispatch = useDispatch();
@@ -16,7 +18,11 @@ function Basket() {
     const handleIncreaseCart = (cartItem) =>{
         dispatch(addToCart(cartItem))
     }
-    
+
+    const handleRemoveCart = (cartItem) =>{
+        dispatch(removeFromCart(cartItem))
+    }
+
     const cart = useSelector((state) => state.cart)
     return (
         <>
@@ -44,6 +50,8 @@ function Basket() {
 
 
                         </div>
+
+                        <button onClick={()=> handleRemoveCart(cartItem)}>x</button>
                     </div>
                 ))}
             </div>

@@ -2,24 +2,41 @@
 import React from 'react';
 import '../shop_css/products.css'
 import { useSelector, useDispatch } from 'react-redux';
-import { addToCart } from '../../../features/cartSlice';
+import { addToCart, decreaseCart } from '../../../features/cartSlice';
 
 
-function Products({ product }) {
+function Products({product}) {
 
-    const cartItems = useSelector(state => state.cart.cartItems);
+    const cart = useSelector((state) => state.cart)
 
     const dispatch = useDispatch();
 
     const handleAddToCart = (product) => {
         dispatch(addToCart(product))
-        console.log(product)
+    
+    }
+
+
+    const handleDecraeseCart = (product) => {
+
+        dispatch(decreaseCart(product))
+
+    }
+
+    const handleIncreaseCart = (product) =>{
+        dispatch(addToCart(product))
     }
 
 
     return (
         <div className="product">
             <div className='product_container'>
+
+            {cart.cartItems?.map((cartItem) => {
+
+                
+            })}
+
                 <h5>{product.title}</h5>
                 <div className='product_imgPart'>
                     <div className='product_img'>
@@ -59,14 +76,14 @@ function Products({ product }) {
                         </p>
 
                         <div className='product_count_part'>
-                            <p>-</p>
-                            {/* <p>{cart.cartItems.cartQuantity} </p> */}
-                            {/* {console.log(cart.cartItems.cartQuantity)} */}
-                            <input type="number" value={product.cartQuantity} />
+                            <p onClick={() => handleDecraeseCart(product)}>-</p>
+    
+                            <input type="number" value={cart.cartQuantity} />
 
                             {console.log(product.cartQuantity)}
 
-                            <p >+</p>
+                            <p onClick={()=> handleIncreaseCart(product)} >+</p>
+                            
 
                             <button onClick={() => handleAddToCart(product)}>Add to cart</button>
                         </div>
