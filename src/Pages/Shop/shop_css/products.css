@@ -57,6 +57,19 @@
 .product_count_part{
     display: flex;
     gap: 20px;
+    align-items: center;
+}
+
+.product_count_part p{
+    width: 30px;
+    height: 30px;
+    background-color: #2a2836;
+    transform: skew(-4deg);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .product_count_part button{
@@ -114,6 +127,7 @@
     transform: skew(-4deg);
     background: #2a2836;
     margin-bottom: 10px;
+    cursor: default;
 }
 
 .product_information{

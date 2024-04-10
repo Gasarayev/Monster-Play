@@ -4,12 +4,18 @@ import { FiShoppingCart } from "react-icons/fi";
 import { FiUser } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { NavLink, useLocation } from 'react-router-dom';
-
+import Basket from '../Pages/Shop/ProductDetails/Basket';
 
 
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(true);
+
+    const [isBasketOpen, setIsBasketOpen] = useState(false);
+
+    const toggleBasket = () => {
+        setIsBasketOpen(!isBasketOpen);
+    };
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -56,9 +62,10 @@ function Navbar() {
                 </div>
 
                 <div className='icons_part'>
-                    <div>
+                    <NavLink to={"/basket"}>
+
                         <FiShoppingCart />
-                    </div>
+                    </NavLink>
                     <div>
                         <FiUser />
                     </div>
@@ -69,6 +76,7 @@ function Navbar() {
                 </div>
 
             </nav >
+
 
         </>
     )

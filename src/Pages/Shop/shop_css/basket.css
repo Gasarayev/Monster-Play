@@ -1,0 +1,42 @@
+.basket{
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.basket > h2{
+    padding-bottom: 40px;
+}
+
+.basket_myCard{
+    width: 80%;
+    display: flex;
+    gap: 50px;
+    /* background-color: #23202E; */
+
+}
+
+.basket_myCard img{
+    width: 300px;
+}
+
+.basket_myCard-content{
+    background-color: #23202E;
+}
+
+.basket_myCard-content h3{
+    padding: 7px 25px;
+    font-weight: 400;
+}
+
+.basket_myCard-content p{
+    color: #23202E;
+    padding: 7px 25px;
+    color: #b9b7c0;
+    font-weight: 400;
+}
