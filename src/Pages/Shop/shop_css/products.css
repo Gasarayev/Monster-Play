@@ -60,17 +60,6 @@
     align-items: center;
 }
 
-.product_count_part p{
-    width: 30px;
-    height: 30px;
-    background-color: #2a2836;
-    transform: skew(-4deg);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
 
 .product_count_part button{
     width: 150px;
@@ -91,25 +80,6 @@
 .product_count_part button:hover {
     background-position: left;
     color: #d31c3e;
-}
-
-.product_count_part input{
-    width: 200px;
-    padding: .75rem 1.25rem;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #b9b7c0;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    transform: skew(-4deg);
-    background: #2a2836;
-}
-
-.product_count_part input::-webkit-inner-spin-button,
-.product_count_part input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  
 }
 
 .product_desc_info{

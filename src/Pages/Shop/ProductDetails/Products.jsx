@@ -76,15 +76,6 @@ function Products({product}) {
                         </p>
 
                         <div className='product_count_part'>
-                            <p onClick={() => handleDecraeseCart(product)}>-</p>
-    
-                            <input type="number" value={cart.cartQuantity} />
-
-                            {console.log(product.cartQuantity)}
-
-                            <p onClick={()=> handleIncreaseCart(product)} >+</p>
-                            
-
                             <button onClick={() => handleAddToCart(product)}>Add to cart</button>
                         </div>
                     </div>
