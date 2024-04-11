@@ -18,7 +18,7 @@ function Blog({ slides }) {
   return (
     <>
       <Navbar />
-      {/* Blogs */}
+
 
       <div className='blog_banner'>
         <div className='blog_banner_bgOpacity'>
@@ -56,7 +56,7 @@ function Blog({ slides }) {
         </div>
         <div className='blog_right'>
 
-          {/* Search */}
+          
           <input
             type="text"
             value={searchTerm}
@@ -65,7 +65,7 @@ function Blog({ slides }) {
           />
 
 
-          {/* Popular News */}
+          
           <h3>Popular News</h3>
           {slides.map((slide) => (
             <div className='blog_populars' key={slide.id}>
