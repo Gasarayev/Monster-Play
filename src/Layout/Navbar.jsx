@@ -52,7 +52,12 @@ function Navbar() {
 
                         <div className='mobile_icons'>
                             <div>
-                                <FiShoppingCart />
+                                <NavLink to={"/basket"}>
+
+
+                                    <FiShoppingCart />
+
+                                </NavLink>
                             </div>
                             <div>
                                 <FiUser />
@@ -64,7 +69,9 @@ function Navbar() {
                 <div className='icons_part'>
                     <NavLink to={"/basket"}>
 
+
                         <FiShoppingCart />
+
                     </NavLink>
                     <div>
                         <FiUser />

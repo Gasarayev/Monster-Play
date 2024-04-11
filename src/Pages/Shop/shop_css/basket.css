@@ -1,6 +1,11 @@
-.basket{
+.basket_empty{
+    padding: 150px 0;
+}
+
+.basket {
     width: 100%;
     padding-top: 150px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,34 +14,72 @@
 
 }
 
-.basket > h2{
+.basket>h2 {
     padding-bottom: 40px;
 }
 
-.basket_myCard{
+.basket_myCard {
     width: 80%;
     display: flex;
-    gap: 50px;
-    /* background-color: #23202E; */
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    background-color: #292732;
+    padding: 10px;
+    border-radius: 5px;
 
 }
 
-.basket_myCard img{
-    width: 300px;
+.basket_myCard img {
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
 }
 
-.basket_myCard-content{
+.basket_myCard-content {
     background-color: #23202E;
+    border-radius: 5px;
 }
 
-.basket_myCard-content h3{
+.basket_myCard-content h3 {
     padding: 7px 25px;
     font-weight: 400;
 }
 
-.basket_myCard-content p{
+.basket_myCard-content p {
     color: #23202E;
     padding: 7px 25px;
     color: #b9b7c0;
     font-weight: 400;
+    display: flex;
+    gap: 10px;
+}
+
+.basket_myCard-content p i{
+    cursor: pointer;
+}
+
+.basket_myCard .remove_icon {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
+
+.basket_myCard .remove_icon i{
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .basket_myCard {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .basket_myCard>img {
+        width: 70%;
+        height: 100%;
+    }
 }

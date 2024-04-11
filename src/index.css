@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
     color: #fff;
-    scrollbar-color: #1f1d29 #2a2836 ;
+    scrollbar-color: #1f1d29 #2a2836;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
     letter-spacing: .02em;
 }
 
-h2{
+h2 {
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.2;
@@ -26,3 +26,4 @@ h2{
 a:link {
     text-decoration: none;
 }
+

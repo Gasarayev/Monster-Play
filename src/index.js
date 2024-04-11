@@ -60,8 +60,9 @@ import ProductDetails from './Pages/Shop/ProductDetails/ProductDetails.jsx';
 
 import { configureStore } from "@reduxjs/toolkit"
 import { Provider } from "react-redux"
-import cartReducer from './features/cartSlice.js'
+import cartReducer, {getTotals} from './features/cartSlice.js'
 import Basket from './Pages/Shop/ProductDetails/Basket.jsx';
+import BasketDetails from './Pages/Shop/ProductDetails/BasketDetails.jsx';
 
 
 
@@ -70,6 +71,8 @@ const store = configureStore({
     cart: cartReducer,
   }
 })
+
+store.dispatch(getTotals())
 
 
 
@@ -84,7 +87,7 @@ ReactDOM.render(
           <Route path="/blog/:id" element={<BlogInfo slides={slides} />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/shop/product-details/:id" element={<ProductDetails product={product} />} />
-          <Route path="/basket" element={<Basket/>} />
+          <Route path="/basket" element={<BasketDetails/>} />
         </Routes>
       </Router>
     </Provider>

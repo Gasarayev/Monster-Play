@@ -10,20 +10,7 @@ function Products({product}) {
     const cart = useSelector((state) => state.cart)
 
     const dispatch = useDispatch();
-
     const handleAddToCart = (product) => {
-        dispatch(addToCart(product))
-    
-    }
-
-
-    const handleDecraeseCart = (product) => {
-
-        dispatch(decreaseCart(product))
-
-    }
-
-    const handleIncreaseCart = (product) =>{
         dispatch(addToCart(product))
     }
 

@@ -128,7 +128,7 @@ nav {
     }
 
     .burgerMenu.active {
-        transform: translateX(500px);
+        transform: translateX(500px); 
 
     }
 
@@ -145,6 +145,7 @@ nav {
         justify-content: center;
         gap: 20px;
         font-size: 24px;
+        z-index: 9999;
     }
 
 }

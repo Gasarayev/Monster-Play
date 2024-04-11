@@ -1,4 +1,3 @@
-// ProductDetails.jsx
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import "../shop_css/productdetails.css";

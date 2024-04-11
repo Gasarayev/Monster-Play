@@ -1,8 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Navbar from '../../../Layout/Navbar';
 import "../shop_css/basket.css"
-import { addToCart, decreaseCart, removeFromCart } from '../../../features/cartSlice';
+import { addToCart, decreaseCart, removeFromCart, clearCart } from '../../../features/cartSlice';
 
 
 function Basket() {
@@ -15,46 +14,90 @@ function Basket() {
 
     }
 
-    const handleIncreaseCart = (cartItem) =>{
+    const handleIncreaseCart = (cartItem) => {
         dispatch(addToCart(cartItem))
     }
 
-    const handleRemoveCart = (cartItem) =>{
+    const handleRemoveCart = (cartItem) => {
         dispatch(removeFromCart(cartItem))
     }
+
+    const handleClearCart = () => {
+        dispatch(clearCart())
+    }
+
+
 
     const cart = useSelector((state) => state.cart)
     return (
         <>
-            <Navbar />
-            <div className="basket">
+
+            {cart.cartItems.length === 0 ? (
+
+                <div className='basket_empty'>
+                    <p>Your cart is currently empty</p>
+
+                </div>
+            ) : (
+
+                <div className="basket">
 
 
-                {cart.cartItems?.map(cartItem => (
+                    {cart.cartItems?.map(cartItem => (
 
-                    <div className='basket_myCard' key={cartItem.id} >
+                        <div className='basket_myCard' key={cartItem.id} >
 
-                        <img src={cartItem.img} alt={cartItem.title} />
-                        <div className='basket_myCard-content'>
-                            <h3>{cartItem.title}</h3>
+                            <img src={cartItem.img} alt={cartItem.title} />
+                            <div className='basket_myCard-content'>
+                                <h3>{cartItem.title}</h3>
 
 
-                            <p><span onClick={() => handleDecraeseCart(cartItem)}>-</span>
-                                Count: {cartItem.cartQuantity}
-                                <span onClick={()=> handleIncreaseCart(cartItem)}>+</span>
-                            </p>
+                                <p>
+                                    <span onClick={() => handleDecraeseCart(cartItem)}>
+                                        <i class="fa-solid fa-minus"></i>
+                                    </span>
+                                    <span className='basket_count'>
+                                        Count: {cartItem.cartQuantity}
+                                    </span>
+                                    <span onClick={() => handleIncreaseCart(cartItem)}>
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                </p>
 
-                            <p>Price: <span>{cartItem.newPrice}$ </span></p>
-                            <p>Total Price: <span>{cartItem.newPrice * cartItem.cartQuantity}</span></p>
-                            <p>About: <span>{cartItem.desc}</span></p>
+                                <p>Price: <span>{cartItem.newPrice} $ </span></p>
+                                <p>Total Price: <span>{cartItem.newPrice * cartItem.cartQuantity} $</span></p>
+                                <p>About: <span>{cartItem.desc}</span></p>
 
+
+                            </div>
+
+                            <span className='remove_icon' onClick={() => handleRemoveCart()}>
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
 
                         </div>
 
-                        <button onClick={()=> handleRemoveCart(cartItem)}>x</button>
+
+
+                    ))}
+
+                    <div >
+
+                        <p>
+
+                            Total price:  ${cart.cartTotalAmount}
+                        </p>
+
+                        <button onClick={() => handleClearCart()}>Clear</button>
                     </div>
-                ))}
-            </div>
+
+
+                </div>
+
+            )}
+
+
+
         </>
     );
 }
