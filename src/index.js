@@ -15,8 +15,6 @@ import { Provider } from "react-redux"
 import cartReducer, {getTotals} from './features/cartSlice.js'
 import BasketDetails from './Pages/Shop/ProductDetails/BasketDetails.jsx';
 
-
-
 const store = configureStore({
   reducer: {
     cart: cartReducer,
@@ -43,7 +41,10 @@ ReactDOM.render(
       </Router>
     </Provider>
   </React.StrictMode>,
-  root
+  document.getElementById('root')
 );
+// Bu dəqiq belə olmalıdı? Bildiyim qədər belə olmalı deyil ax
 
+// bu kohne versiyadi
 
+// ama dunene geder ishleyirdi problemsiz netfly. dunen feturesi ayzdim onnan sora olub
