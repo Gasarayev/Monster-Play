@@ -38,7 +38,7 @@ const cartSlice = createSlice({
 
 
             } else if (state.cartItems[itemIndex].cartQuantity <= 1) {
-                state.cartItems[itemIndex].cartQuantity === 1
+                state.cartItems[itemIndex].cartQuantity = 1
 
             };
 
