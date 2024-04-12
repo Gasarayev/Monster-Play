@@ -34,7 +34,7 @@ const cartSlice = createSlice({
             const itemIndex = state.cartItems.findIndex((item) => item.id === action.payload.id)
 
             if (state.cartItems[itemIndex].cartQuantity > 1) {
-                state.cartItems[itemIndex].cartQuantity = state.cartItems[itemIndex].cartQuantity - 1
+                state.cartItems[itemIndex].cartQuantity -= 1
 
 
             } else if (state.cartItems[itemIndex].cartQuantity <= 1) {
@@ -55,8 +55,10 @@ const cartSlice = createSlice({
 
         },
         clearCart(state, action) {
-            state.cartItems = [],
-                localStorage.setItem('cartItems', JSON.stringify(state.cartItems))
+            state.cartItems = [];
+            localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
+            state.cartTotalQuantity = 0;
+            state.cartTotalAmount = 0;
         },
 
         getTotals(state, action) {
