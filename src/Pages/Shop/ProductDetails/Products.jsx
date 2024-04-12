@@ -55,7 +55,7 @@ function Products({product}) {
                         )}
 
                         <p className='product_price'>
-                            {product.newPrice}
+                            {product.newPrice} <span>$</span>
                         </p>
 
                         <p>

@@ -19,7 +19,7 @@ function Basket() {
     }
 
     const handleRemoveCart = (cartItem) => {
-        dispatch(removeFromCart(cartItem))
+        dispatch(removeFromCart(cartItem));
     }
 
     const handleClearCart = () => {
@@ -71,7 +71,7 @@ function Basket() {
 
                             </div>
 
-                            <span className='remove_icon' onClick={() => handleRemoveCart()}>
+                            <span className='remove_icon' onClick={() => handleRemoveCart(cartItem)}>
                                 <i class="fa-solid fa-xmark"></i>
                             </span>
 

@@ -45,14 +45,15 @@ const cartSlice = createSlice({
             localStorage.setItem('cartItems', JSON.stringify(state.cartItems))
 
         },
-
         removeFromCart(state, action) {
-
-            const nextCartItems = state.cartItems.filter((cartItem) => cartItem.id !== action.payload.id)
-
-            state.cartItems = nextCartItems;
-            localStorage.setItem('cartItems', JSON.stringify(state.cartItems))
-
+        
+            if (action.payload && action.payload.id) {
+                const nextCartItems = state.cartItems.filter((cartItem) => cartItem.id !== action.payload.id)
+                state.cartItems = nextCartItems;
+                localStorage.setItem('cartItems', JSON.stringify(state.cartItems))
+            } else {
+                console.error("Invalid payload for removeFromCart action:", action.payload);
+            }
         },
         clearCart(state, action) {
             state.cartItems = [];
@@ -63,22 +64,22 @@ const cartSlice = createSlice({
 
         getTotals(state, action) {
             let { total, quantity } = state.cartItems.reduce((cartTotal, cartItem) => {
-                const { price, cartQuantity } = cartItem;
-                const itemTotal = price * cartQuantity;
-
+                const { newPrice, cartQuantity } = cartItem;
+                console.log("price:", newPrice, "cartQuantity:", cartQuantity);
+                const itemTotal = newPrice * cartQuantity;
+        
                 cartTotal.total += itemTotal
                 cartTotal.quantity += cartQuantity
-
+        
                 return cartTotal;
-
+        
             }, {
                 total: 0,
                 quantity: 0,
             });
-
+        
             state.cartTotalQuantity = quantity;
             state.cartTotalAmount = total;
-
         }
 
     }

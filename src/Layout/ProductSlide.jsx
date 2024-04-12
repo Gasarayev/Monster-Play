@@ -91,10 +91,10 @@ function ProductSlide({ productSlideJson }) {
                             {(
                                 <div className="carusel_Price">
                                     <div className="carusel_newPrice">
-                                        {carusel.newPrice}
+                                        {carusel.newPrice} <span>$</span>
                                     </div>
                                     <div className="carusel_oldPrice">
-                                        {carusel.oldPrice}
+                                        {carusel.oldPrice} 
                                     </div>
                                 </div>
 
