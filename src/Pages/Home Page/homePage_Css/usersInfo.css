@@ -38,8 +38,8 @@
 }
 
 .usersInfo_container .usersInfo_section .usersInfo_section_part{
-    width: 420px;
-    height: 280px;
+    width: 400px;
+    height: 260px;
     background-color: #282535;
     transform: skew(-2deg);
     border-radius: 10px;

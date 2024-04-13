@@ -1,5 +1,13 @@
 .basket_empty{
-    padding: 150px 0;
+    padding: 160px 0 62px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basket_empty .basket_emptyLink{
+    color: #d31c3e;
 }
 
 .basket {
@@ -68,8 +76,41 @@
 .basket_myCard .remove_icon i{
     cursor: pointer;
     font-size: 24px;
-
 }
+
+.basketTotalClear{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basketTotalClear button{
+    width: 150px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transform: skew(-4deg);
+    background: #d31c3e;
+    background: linear-gradient(to left, #d31c3e 50%, white 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.basketTotalClear button:hover {
+    background-position: left;
+    color: #d31c3e;
+}
+
+.basketTotalClear h3 span{
+    color: #d31c3e;
+}
+
+
 
 @media screen and (max-width: 1000px) {
     .basket_myCard {
@@ -82,4 +123,12 @@
         width: 70%;
         height: 100%;
     }
+}
+
+@media screen and (max-width: 650px) {
+
+    .basket_myCard .basket_myCard_about{
+        display: none;
+    }
+    
 }

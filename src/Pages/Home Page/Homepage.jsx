@@ -12,7 +12,10 @@ import ContactSection from './ContactSection';
 import UsersInfo from './UsersInfo';
 import Footer from './Footer';
 
+
+
 function Homepage() {
+
     return (
         <>
             <Navbar />
@@ -20,10 +23,11 @@ function Homepage() {
             <PauseOnHover slides={slides} />
             <ProductSlide productSlideJson={productSlideJson} />
             <NewsSection slides={slides} />
-            <SlideLogo parnersLogo = {partnersLogo}/>
-            <ContactSection/>
-            <UsersInfo/>
-            <Footer/>
+            <SlideLogo parnersLogo={partnersLogo} />
+            <ContactSection />
+            <UsersInfo />
+            <Footer />
+
         </>
     );
 }

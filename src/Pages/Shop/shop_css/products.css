@@ -1,17 +1,17 @@
-.product{
+.product {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.product .product_container{
+.product .product_container {
     padding-top: 200px;
     width: 80%;
     display: flex;
     flex-direction: column;
 }
 
-.product_container h5{
+.product_container h5 {
     font-size: 12px;
     color: #fff;
     font-size: .75rem;
@@ -21,24 +21,24 @@
     padding-bottom: 20px;
 }
 
-.product_imgPart{
+.product_imgPart {
     display: flex;
     gap: 8%;
 }
 
-.product_img img{
+.product_img img {
     width: 730px;
     height: 460px;
     border-radius: 5px;
 }
 
-.product_content{
+.product_content {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.product_content h1{
+.product_content h1 {
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.2;
@@ -46,22 +46,22 @@
     letter-spacing: .01em;
 }
 
-.product_starsIcon i{
+.product_starsIcon i {
     color: #fff;
 }
 
-.product_content .product_price{
+.product_content .product_price {
     font-size: 1.625rem;
 }
 
-.product_count_part{
+.product_count_part {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
 
-.product_count_part button{
+.product_count_part button {
     width: 150px;
     height: 50px;
     color: white;
@@ -82,14 +82,14 @@
     color: #d31c3e;
 }
 
-.product_desc_info{
+.product_desc_info {
     padding: 50px 0;
     display: flex;
     gap: 70px;
     flex-wrap: wrap;
 }
 
-.product_desc_info h5{
+.product_desc_info h5 {
     width: 220px;
     padding: .35rem 1rem;
     outline: none;
@@ -101,102 +101,114 @@
     cursor: default;
 }
 
-.product_information{
+.product_information {
     width: calc(40% - 70px);
 }
 
-.product_informationType{
+.product_informationType {
     width: 180px;
     background-color: #282535;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.product_informationType p{
+.product_informationType p {
     padding: 20px 25px;
     color: #b9b7c0;
     font-weight: 400;
 }
 
-.product_infoContain{
+.product_infoContain {
     display: flex;
 }
 
-.product_description{
+.product_description {
     width: 60%;
 }
 
-.product_description p{
+.product_description p {
     padding-bottom: 20px;
 }
 
-.product_informationPro{
+.product_informationPro {
     width: calc(100% - 180px);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: #23202E;
 }
 
-.product_informationPro p{
+.product_informationPro p {
     padding: 20px 25px;
     color: #fff;
     font-weight: 400;
 }
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
 
-    .product_imgPart{
+    .product_imgPart {
         flex-wrap: wrap;
     }
 
-    .product_img img{
+    .product_img img {
         width: 520px;
         height: 330px;
 
     }
-    
-    .product_description{
+
+    .product_description {
         width: 100%;
     }
 
-    .product_information{
+    .product_information {
         width: 100%;
     }
 
 
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
+
+    .product .product_container {
+        padding-top: 150px;
+    }
 
     .product_content h1 {
         font-size: 2rem;
     }
 
-    .product_imgPart{
+    .product_imgPart {
         justify-content: center;
         /* gap: 0; */
     }
 
 
-    .product_img{
+    .product_img {
         width: 100%;
     }
 
-    .product_img img{
+    .product_img img {
         width: 100%;
         height: 100%;
     }
 
-    .product_count_part button{
+    .product_count_part button {
         background: linear-gradient(to left, #d31c3e 50%, #d31c3e 50%) right;
     }
 
-    .product_count_part button:hover{
+    .product_count_part button:hover {
         color: #fff;
     }
 
-    .product_informationType{
+    .product_desc_info {
+        margin-top: 40px;
+    }
+
+    .product_desc_info {
+        gap: 40px;
+    }
+
+    .product_informationType {
         width: 130px;
     }
 
@@ -205,12 +217,12 @@
         font-size: 12px;
     }
 
-    .product_informationPro{
+    .product_informationPro {
         width: calc(100% - 130px);
     }
 
 
-    .product_informationPro p{
+    .product_informationPro p {
         padding: 10px 10px;
         font-size: 12px;
     }

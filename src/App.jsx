@@ -1,11 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Homepage from './Pages/Home Page/Homepage'
 
 
-
 function App() {
-
-
 
   return (
     <>

@@ -30,6 +30,7 @@ nav {
     justify-content: end;
     align-items: center;
     gap: 20px;
+    font-size: 20px;
 }
 
 .icons_part div{
@@ -50,7 +51,7 @@ nav {
 
 .burgerMenu li{
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
 }
 .mobile_icons{
     display: none;
@@ -66,6 +67,8 @@ nav {
 .burgerMenuA.active{
     transition: transform 0.9s ease !important;
 }
+
+
 
 
 @media only screen and (max-width: 1000px) {

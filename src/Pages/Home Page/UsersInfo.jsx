@@ -14,7 +14,7 @@ function UsersInfo() {
                     <p className='usersInfo_text'>
                         All and. Green day waters appear lights, fish you'll called likeness midst have you May.
                         Lesser brought evening man she'd that. Replenish form wherein form midst. Good from forth together.
-                    </p>
+                    </p> 
 
                     <div className='usersInfo_section'>
                         <div className='usersInfo_section_part'>

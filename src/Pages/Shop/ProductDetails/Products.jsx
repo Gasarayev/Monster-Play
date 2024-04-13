@@ -84,7 +84,7 @@ function Products({product}) {
                         <p className='product_description_text'>
                             {product.desc4}
                         </p>
-                    </div>
+                    </div> 
 
                     <div className='product_information'>
                         <h5>additional information</h5>

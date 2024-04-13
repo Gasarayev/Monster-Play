@@ -28,8 +28,8 @@ function Navbar() {
         window.scrollTo(0, 0);
     }, [pathname])
 
-    return (
-        <>
+    return ( 
+        <> 
 
             <nav>
                 <div className='menu_logo'>
@@ -45,8 +45,6 @@ function Navbar() {
                             <li>Shop</li>
                         </NavLink>
 
-
-                        <li>About</li>
                         <NavLink to={"/contact-us"}><li>Contact</li></NavLink>
 
 

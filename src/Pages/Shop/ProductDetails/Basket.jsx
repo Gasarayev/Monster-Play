@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import "../shop_css/basket.css"
-import { addToCart, decreaseCart, removeFromCart, clearCart } from '../../../features/cartSlice';
+import { addToCart, decreaseCart, removeFromCart, clearCart, getTotals } from '../../../features/cartSlice';
+import { Link } from 'react-router-dom';
 
 
 function Basket() {
@@ -29,18 +30,27 @@ function Basket() {
 
 
     const cart = useSelector((state) => state.cart)
+
+    useEffect(() => {
+        dispatch(getTotals())
+    }, [cart, dispatch])
+
+
     return (
         <>
 
             {cart.cartItems.length === 0 ? (
 
                 <div className='basket_empty'>
-                    <p>Your cart is currently empty</p>
-
+                    <p>Your cart is currently empty.</p>
+                    <Link to={"/shop"}>
+                        <p className='basket_emptyLink'>Start Shopping</p>
+                    </Link>
                 </div>
             ) : (
 
                 <div className="basket">
+
 
 
                     {cart.cartItems?.map(cartItem => (
@@ -66,7 +76,7 @@ function Basket() {
 
                                 <p>Price: <span>{cartItem.newPrice} $ </span></p>
                                 <p>Total Price: <span>{cartItem.newPrice * cartItem.cartQuantity} $</span></p>
-                                <p>About: <span>{cartItem.desc}</span></p>
+                                <p className='basket_myCard_about'>About: <span>{cartItem.desc}</span></p>
 
 
                             </div>
@@ -81,14 +91,14 @@ function Basket() {
 
                     ))}
 
-                    <div >
-
-                        <p>
-
-                            Total price:  ${cart.cartTotalAmount}
-                        </p>
+                    <div className='basketTotalClear'>
 
                         <button onClick={() => handleClearCart()}>Clear</button>
+                        <h3>
+
+                            Total price: <span> {cart.cartTotalAmount}$ </span>
+                        </h3>
+
                     </div>
 
 
