@@ -8,7 +8,7 @@ nav {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     position: fixed;
-    box-shadow: 0px 15px 10px -15px #111; 
+    box-shadow: 0px 15px 10px -15px #111;
     z-index: 9999999999999;
 }
 
@@ -33,10 +33,9 @@ nav {
     font-size: 20px;
 }
 
-.icons_part div{
+.icons_part div {
     cursor: pointer;
 }
-
 
 .hamburger_menu {
     display: none;
@@ -49,31 +48,29 @@ nav {
     gap: 40px;
 }
 
-.burgerMenu li{
+.burgerMenu li {
     cursor: pointer;
     font-size: 18px;
 }
-.mobile_icons{
+
+.mobile_icons {
     display: none;
 }
 
-.burgerMenuA{
+.burgerMenuA {
     top: 80px;
     list-style: none;
     display: flex;
     gap: 40px;
 }
 
-.burgerMenuA.active{
+.burgerMenuA.active {
     transition: transform 0.9s ease !important;
 }
 
-
-
-
 @media only screen and (max-width: 1000px) {
 
-    
+
     .menu_part,
     .icons_part {
         display: none;
@@ -95,9 +92,9 @@ nav {
         cursor: pointer;
     }
 
-    .burgerMenuA{
+    .burgerMenuA {
         position: fixed;
-        width: 50%;
+        width: 65%;
         height: 100%;
         display: flex;
         gap: 30px;
@@ -107,7 +104,7 @@ nav {
         color: white;
         top: 70px;
         right: 0;
-        transform: translateX(0); 
+        transform: translateX(0);
         transition: transform 0.9s ease;
         list-style: none;
         margin-top: 30px;
@@ -116,7 +113,7 @@ nav {
         padding-top: 80px;
     }
 
-    .burgerMenuA li{
+    .burgerMenuA li {
         cursor: pointer;
         font-size: 28px;
     }
@@ -126,12 +123,12 @@ nav {
         width: 200px;
         top: 100px;
         right: -20px;
-        transform: translateX(0); 
+        transform: translateX(0);
         opacity: 0;
     }
 
     .burgerMenu.active {
-        transform: translateX(500px); 
+        transform: translateX(500px);
 
     }
 
@@ -142,13 +139,39 @@ nav {
         padding: 20px;
     }
 
-    .mobile_icons{
-        display: block;
+    .mobile_icons {
+        width: 100%;
+        height: 244px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        font-size: 32px;
+        z-index: 9999;
+    }
+
+    .mobile_icons .mobile_iconsChild {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .mobile_footer {
+        background-color: #1f1d29;
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .mobile_footer p{
         display: flex;
         justify-content: center;
-        gap: 20px;
-        font-size: 24px;
-        z-index: 9999;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+
     }
 
 }

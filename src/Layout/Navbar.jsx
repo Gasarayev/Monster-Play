@@ -28,8 +28,8 @@ function Navbar() {
         window.scrollTo(0, 0);
     }, [pathname])
 
-    return ( 
-        <> 
+    return (
+        <>
 
             <nav>
                 <div className='menu_logo'>
@@ -49,19 +49,25 @@ function Navbar() {
 
 
                         <div className='mobile_icons'>
-                            <div>
+                            <div className='mobile_iconsChild'>
+                                
                                 <NavLink to={"/basket"}>
-
-
                                     <FiShoppingCart />
-
                                 </NavLink>
+
+                                <NavLink to={"#"}>
+                                    <FiUser />
+                                </NavLink>
+
                             </div>
-                            <div>
-                                <FiUser />
+
+
+                            <div className='mobile_footer'>
+                                <p>Create by Gasarayev</p>
                             </div>
                         </div>
                     </ul>
+
                 </div>
 
                 <div className='icons_part'>

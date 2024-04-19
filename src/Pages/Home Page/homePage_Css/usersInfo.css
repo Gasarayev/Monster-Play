@@ -55,7 +55,6 @@
 }
 
 .usersInfo_section_part .usersInfo_section_part_icons{
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +64,6 @@
     color: #fff;
     background-color: rgba(255, 255, 255, .05);
     border-radius: 100%;
-
 }
 
 .usersInfo_section_part_icons i{
@@ -81,7 +79,6 @@
 .usersInfo_section_part p{
     color: #b9b7c0;
 }
-
 
 @media screen and (max-width: 1520px){
     .usersInfo_container .usersInfo_section .usersInfo_section_part{
